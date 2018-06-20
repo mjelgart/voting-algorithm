@@ -1,8 +1,7 @@
-newSeats = 15
+newSeats = 
 totalSeats = 435.0 + newSeats
 
-def algorithm(results):
-    global newSeats, totalSeats
+def algorithm(results, currSeats, newSeats):
 
     houseSeatsLeft = newSeats
     newSeats = {}
@@ -42,4 +41,4 @@ electionResults = {
 
 
 if __name__ == "__main__":
-    algorithm(electionResults)
+    algorithm(electionResults, totalSeats, newSeats)
